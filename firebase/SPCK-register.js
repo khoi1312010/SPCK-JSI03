@@ -4,13 +4,13 @@ import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebase
 const usernameElm = document.getElementById('username');
 const passwordElm = document.getElementById('password');
 const emailElm = document.getElementById('email');
-const loginBtn = document.getElementById('login-btn');
+const registerBtn = document.getElementById('register-btn');
 
 const handleRegister = () => {
     const username = usernameElm.value;
     const password = passwordElm.value;
     const email = emailElm.value;
-    createUserWithEmailAndPassword(auth, username, email, password)
+    createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const user = userCredential.user;
             window.location = './SPCK-login.html'
@@ -23,4 +23,4 @@ const handleRegister = () => {
 
 }
 
-loginBtn.addEventListener('click', handleRegister);
+registerBtn.addEventListener('click', handleRegister);
