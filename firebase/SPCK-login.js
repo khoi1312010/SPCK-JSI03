@@ -2,7 +2,7 @@ import { auth } from "./config.js";
 import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
 
 
-const username = document.getElementById("username");
+const email = document.getElementById("email");
 const pass = document.getElementById("password");
 const loginBtn = document.getElementById("login-btn");
 
@@ -14,7 +14,7 @@ const HandleLogin = () => {
       // Signed in 
       const user = userCredential.user;
         alert(user.email)
-        window.location = './SPCK.html'
+        window.location = './SPCK-home.html'
     })
     .catch((error) => {
       const errorCode = error.code;
