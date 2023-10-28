@@ -7,9 +7,9 @@ onAuthStateChanged(auth, (user) => {
     if (user) {
       const uid = user.uid;
       console.log(user.email);
-      welcomeText.textContent = `Welcome ${user.email}`;
+      welcomeText.textContent = `Welcome ${user.email} to our bookstore!`;
     } else {
-      window.location = './login.html';
+      window.location = './SPCK-login.html';
     }
   });
   
