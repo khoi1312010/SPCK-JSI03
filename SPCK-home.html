@@ -62,72 +62,18 @@ http://www.tooplate.com/view/2092-shelf
                     <p></p>
                     
                     <div class="tm-gallery">
-                        <div class="row">
-                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                <a href="SPCK-catalogs.html">
-                                    <div class="tm-gallery-item-overlay">
-                                        <img src="img/image-01.jpg" alt="Image" class="img-fluid tm-img-center">
-                                    </div>
-                                    
-                                    <p class="tm-figcaption">The Outsider</p>
-                                </a>
-                            </figure>
-                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                <a href="SPCK-catalogs.html">
-                                    <div class="tm-gallery-item-overlay">
-                                        <img src="img/image-02.jpg" alt="Image" class="img-fluid tm-img-center">
-                                    </div>
-                                    <p class="tm-figcaption">Integer ornare</p>
-                                </a>
-                            </figure>
-                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                <a href="SPCK-catalogs.html">
-                                    <div class="tm-gallery-item-overlay">
-                                        <img src="img/image-03.jpg" alt="Image" class="img-fluid tm-img-center">
-                                    </div>
-                                    <p class="tm-figcaption">Cras non augue</p>
-                                </a>
-                            </figure>
-                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                <a href="SPCK-catalogs.html">
-                                    <div class="tm-gallery-item-overlay">
-                                        <img src="img/image-04.jpg" alt="Image" class="img-fluid tm-img-center">
-                                    </div>
-                                    <p class="tm-figcaption">Dolor lacus</p>
-                                </a>
-                            </figure>
-                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                <a href="SPCK-catalogs.html">
-                                    <div class="tm-gallery-item-overlay">
-                                        <img src="img/image-05.jpg" alt="Image" class="img-fluid tm-img-center">
-                                    </div>
-                                    <p class="tm-figcaption">Quisque velit</p>
-                                </a>
-                            </figure>
-                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                <a href="SPCK-catalogs.html">
-                                    <div class="tm-gallery-item-overlay">
-                                        <img src="img/image-06.jpg" alt="Image" class="img-fluid tm-img-center">
-                                    </div>
-                                    <p class="tm-figcaption">Suspendisse suscipit</p>
-                                </a>
-                            </figure>
-                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                <a href="SPCK-catalogs.html">
-                                    <div class="tm-gallery-item-overlay">
-                                        <img src="img/image-07.jpg" alt="Image" class="img-fluid tm-img-center">
-                                    </div>
-                                    <p class="tm-figcaption">Facilisis justo</p>
-                                </a>
-                            </figure>
-                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                                <a href="SPCK-catalogs.html">
-                                    <div class="tm-gallery-item-overlay">
-                                        <img src="img/image-08.jpg" alt="Image" class="img-fluid tm-img-center">
-                                    </div>
-                                    <p class="tm-figcaption">Vivamus facilisis</p>
-                                </a>
-                            </figure> 
+                        <div class="row" id="productList">
+                            <template id="book-item">
+                                <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                                    <a href="SPCK-catalogs.html">
+                                        <div class="tm-gallery-item-overlay">
+                                            <img id="book-image" src="img/image-01.jpg" alt="Image" class="img-fluid tm-img-center">
+                                        </div>
+                                        
+                                        <p class="tm-figcaption" id="book-name">The Outsider</p>
+                                    </a>
+                                </figure>
+                            </template>
                         </div>   
                     </div>
                     
@@ -169,7 +115,7 @@ http://www.tooplate.com/view/2092-shelf
         <script src="js/popper.min.js"></script>                <!-- Popper (https://popper.js.org/) -->
         <script src="js/bootstrap.min.js"></script>             <!-- Bootstrap (https://getbootstrap.com/) -->
         <script type="module" src="firebase/displayName.js"></script>
-        <script src="SPCK.js"></script>
+        <script src="./SPCK.js"></script>
         <script>     
        
             $(document).ready(function(){
