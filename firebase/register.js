@@ -11,7 +11,7 @@ const handleRegister = () => {
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const user = userCredential.user;
-            window.location = './SPCK-login.html'
+            window.location = './login.html'
         })
         .catch((error) => {
             const errorCode = error.code;

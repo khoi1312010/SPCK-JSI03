@@ -14,7 +14,7 @@ const HandleLogin = () => {
       // Signed in 
       const user = userCredential.user;
         alert(user.email)
-        window.location = './SPCK-home.html'
+        window.location = './home.html'
     })
     .catch((error) => {
       const errorCode = error.code;
