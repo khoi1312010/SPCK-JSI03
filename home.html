@@ -18,11 +18,12 @@ http://www.tooplate.com/view/2092-shelf
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
     <!-- Google web font "Open Sans" -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
     <link rel="stylesheet" href="css/tooplate-style.css"> <!-- Templatemo style -->
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,15 +45,15 @@ http://www.tooplate.com/view/2092-shelf
                     aria-controls="tmMainNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-
+                
                 <div class="collapse navbar-collapse tm-main-nav" id="tmMainNav">
-                    <ul class="nav nav-fill tm-main-nav-ul">
+                    <nav class="navbar">
                         <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="catalogs.html">Preview</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Awards</a></li>
                         <li class="nav-item"><a class="nav-link" href="team.html">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    </ul>
+                    </nav>
                 </div>
             </nav>
 
@@ -63,11 +64,25 @@ http://www.tooplate.com/view/2092-shelf
                 <header>
                     <h2 class="tm-main-title" id="welcome-text"></h2>
                 </header>
+            <header class="header">
+                <div class="header-1">
+                    <form action="" class="search-form">
+                        <input type="search" name="" placeholder="Search..." id="search-box">
+                        <label for="search-box" class="fas fa-search"></label>
+                    </form>
 
+                    <div class="icons">
+                        <div id="search-btn" class="fas fa-search"></div>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <div id="login-btn" class="fas fa-solid fa-user"></div>
+                    </div>
+                </div>
+            </header>
                 <p></p>
 
                 <div class="tm-gallery">
-                    <div class="row" id="productList">
+                    <div class="row" id="productList">  
                         <template id="book-item">
                             <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
                                 <a href="catalogs.html">
@@ -84,16 +99,7 @@ http://www.tooplate.com/view/2092-shelf
                             </figure>
                         </template>
                     </div>
-                </div>
-
-                <nav class="tm-gallery-nav">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item"><a class="nav-link active" href="#">1</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">2</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">3</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">4</a></li>
-                    </ul>
-                </nav>
+                </div>               
             </section>
 
             <section class="media tm-highlight tm-highlight-w-icon">
@@ -106,10 +112,8 @@ http://www.tooplate.com/view/2092-shelf
                     <header>
                         <h2>Need Help?</h2>
                     </header>
-                    <p class="tm-margin-b">Curabitur magna tellus, condimentum vitae consectetur id, elementum sit amet
-                        erat. Phasellus arcu leo, sagittis fringilla nisi et, pulvinar vestibulum mi. Maecenas mollis
-                        ullamcorper est at dignissim.</p>
-                    <a href="" class="tm-white-bordered-btn">Live Chat</a>
+                    <p class="tm-margin-b">You can contact us through the contact us page.</p>
+                    <a href="contact.html" class="tm-white-bordered-btn">Live Chat</a>
                 </div>
             </section>
         </div>
@@ -128,6 +132,7 @@ http://www.tooplate.com/view/2092-shelf
     <script type="module" src="firebase/displayName.js"></script>
     <script src="./SPCK.js"></script>
     <script src="./cart.js"></script>
+    <script src="./main.js"></script>
     <script>
 
         $(document).ready(function () {

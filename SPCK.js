@@ -18,4 +18,11 @@ const getBooks = () => {
       renderBookList()
     });
 }
-getBooks()
+getBooks();
+
+const loginPage = () => {
+  window.location = './login.html'
+}
+
+const loginBtn = document.getElementById('login-btn');
+loginBtn.addEventListener('click', loginPage);
