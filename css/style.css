@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 90%;
+    font-size: 100%;
     overflow-x: hidden;
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
@@ -17,13 +17,6 @@ html ::-webkit-scrollbar-track{
 }
 html ::-webkit-scrollbar-thumb{
     background: black;
-}
-.header .header-1{
-    background: #fff;
-    padding: 1.5rem 9%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .header .header-1 .logo{
     font-size: 5rem;
