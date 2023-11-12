@@ -6,7 +6,7 @@ const renderBookList = () => {
     const productItem = bookTemplate.content.cloneNode(true);
     productItem.getElementById('book-image').src = product.image;
     productItem.getElementById('book-name').textContent = product.name;
-    productItem.getElementById('book-price').textContent = product.price;
+    productItem.getElementById('book-price').textContent = `$${product.price}`;
     productList.appendChild(productItem);
   });
 }

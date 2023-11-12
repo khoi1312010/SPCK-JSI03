@@ -41,7 +41,7 @@ html ::-webkit-scrollbar-thumb{
     background: #fff;
     display: flex;
     align-items: center;
-    border-radius: .5rem;
+    border: none;
 }
 .header .header-1 .search-form input{
     font-size: 3rem;
@@ -97,6 +97,12 @@ body{
 .header .header-2 .navbar a:hover{
     background:var(--dark-color);
 }
+.price{
+    text-align: center;
+}
+
+
+
 
 /* media queries */
 
